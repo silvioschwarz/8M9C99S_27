@@ -9,6 +9,8 @@
   --primary-color: #ffffff;
   --outline-size: 0px;
 }
+
+html { height: 100%; }
         
         body {
             min-height: 100vh;
@@ -53,7 +55,7 @@
 
         canvas { 
             height: 45vh; 
-            width: 45vw;   
+            width: calc(45vh);   
             display: block; 
             outline: var(--outline-size) dashed magenta;
 
