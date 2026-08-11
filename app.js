@@ -22,7 +22,7 @@ playVideo.addEventListener("click", function() {
     main.appendChild(video);
 });
 
-var countdownDate = new Date("Sep 7, 2026 23:59:59").getTime();
+var countdownDate = new Date("Sep 8, 2026 7:59:59").getTime();
 
 var countdownFunction = setInterval(function() {
     var now = new Date().getTime();
@@ -34,7 +34,7 @@ var countdownFunction = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     var weeks = Math.round(days/7);
 
-    phaseDiv.innerHTML = "Phase " + (4 - weeks);
+    phaseDiv.innerHTML = "Phase " + (4 - weeks + 1) + " of 5";
 
     var phaseNum = days - (weeks-1) * 7;
 
@@ -65,6 +65,7 @@ var countdownFunction = setInterval(function() {
     if (distance < 20) {
             playVideo.innerHTML = " Play Video ";  
     }
+        
 
 
     if (distance < 0) {
