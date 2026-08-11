@@ -59,12 +59,11 @@ var countdownFunction = setInterval(function() {
             console.error("Error pixelating image:", error);
         })
 
-        playVideo.innerHTML = "Play Video";
 
        
 
     if (seconds < 20) {
-     //   searchPic.src = "img/Unterschrift_Silvio.jpg"  
+            playVideo.innerHTML = "Play Video";  
     }
 
 
