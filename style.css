@@ -3,6 +3,12 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        :root {
+  --primary-bg-color: #1e90ff;
+  --primary-color: #ffffff;
+  --outline-size: 0px;
+}
         
         body {
             min-height: 100vh;
@@ -10,21 +16,29 @@
             display: grid;
             grid-template-rows: auto 1fr auto;
             align-items: center;
+            outline: var(--outline-size) dashed magenta;
         }
+
         header {
-            min-height: 50px;
+            display: flex;
+            flex-direction: column;
+            min-height: 150px;
             background: lightcyan;
             align-items: center;
             text-align: center;
+            justify-content: center;
+            outline: var(--outline-size) dashed orangered;
         }
         
         main {
             display: flex;
             flex-direction: column;
-            min-height: 400px;
+            min-height: 80vh;
             padding: 1rem;
             justify-content: center;
             align-items: center;
+            outline: var(--outline-size) dashed green;
+            gap: 1rem;
         }
         
         main div {
@@ -34,12 +48,15 @@
             text-align: center;
             align-items: center;
             justify-content: center;
+            outline: var(--outline-size) dashed purple;
         }
 
         canvas { 
             height: 45vh; 
             width: 45vw;   
             display: block; 
+            outline: var(--outline-size) dashed magenta;
+
         }
 
         #imgDiv {
@@ -48,13 +65,15 @@
             grid-column-gap: 20px;
             justify-content: center;
             align-items: center;
-            /* outline: 1px dashed magenta; */
+            max-height: 50vh;
+            outline: var(--outline-size) dashed magenta;
         }
 
         footer {
             min-height: 50px;
             background: PapayaWhip;
             text-align: center;
+            outline: var(--outline-size) dashed blue;
         }
 
         /* Responsive Design */
