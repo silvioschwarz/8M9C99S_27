@@ -62,8 +62,8 @@ var countdownFunction = setInterval(function() {
 
        
 
-    if (seconds < 20) {
-            playVideo.innerHTML = "Play Video";  
+    if (distance < 20) {
+            playVideo.innerHTML = " Play Video ";  
     }
 
 

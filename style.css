@@ -37,21 +37,18 @@
         }
 
         canvas { 
-            height: 50vh; 
-            width: 50vw;   
+            height: 45vh; 
+            width: 45vw;   
             display: block; 
         }
 
         #imgDiv {
             display: grid;
-            grid-template-columns: 1fr 3fr 1fr;
             grid-auto-flow: column;
             grid-column-gap: 20px;
             justify-content: center;
             align-items: center;
-            height: 50vh;
-            margin: 100px auto;
-            padding: 1rem;
+            /* outline: 1px dashed magenta; */
         }
 
         footer {
