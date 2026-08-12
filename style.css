@@ -7,7 +7,7 @@
 :root {
     --primary-bg-color: #1e90ff;
     --primary-color: #ffffff;
-    --outline-size: 7px;
+    --outline-size: 0px;
 }
 
 html,
