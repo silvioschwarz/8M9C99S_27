@@ -73,3 +73,17 @@ var countdownFunction = setInterval(function() {
         countdownDiv.innerHTML = "EXPIRED";
     }
 }, 1000);
+
+
+const sendMail = () => {
+  const mailAdress = "someone@example.com"
+  const ccRecipients =  "mrinal.annand@gmail.com"
+  const subject = encodeURIComponent("This is my subject")
+  const body = encodeURIComponent(document.getElementById('myText').value)
+  const  link= `mailto:${mailAdress}?cc=${ccRecipients}&subject=${subject}&body=${body}`
+  window.location.href = link;
+}
+
+
+var agentDetails = navigator.userAgent;
+console.log("User Agent: " + agentDetails);
