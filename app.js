@@ -60,10 +60,10 @@ var countdownFunction = setInterval(function() {
         })
 
 
-       
-
     if (distance < 20) {
-            playVideo.innerHTML = " Play Video ";  
+        playVideo.classList.toggle("hide");
+        playVideo.innerHTML = " Play Video "; 
+        clearInterval(countdownFunction); 
     }
         
 
