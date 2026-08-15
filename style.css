@@ -10,30 +10,29 @@
     --outline-size: 0px;
 }
 
-html,
-body,
-.container {
+html {
     width: 100%;
     min-height: 100%;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100dvh;
+body {
+    min-height: 100dvh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
-.container header {
-    grid-area: header;
+
+header {
     display: flex;
     flex-direction: column;
     font-weight: bold;
     font-size: calc(1.1dvw + 1.1dvh + 1.1vmin);
-    outline:none;
-    overflow:hidden;
-    font-size-adjust: 0.3;
-    min-height: 5dvh;
-    padding: 5dvh;
+    outline: none;
+    overflow: hidden;
+    font-size-adjust: 0.25;
+    max-height: 3dvh;
+    padding: 7dvh;
     background: lightcyan;
     align-items: center;
     text-align: center;
@@ -41,26 +40,23 @@ body,
     outline: var(--outline-size) dashed orangered;
 }
 
-.container main {
-    grid-area: content;
+main {
     display: flex;
     flex-direction: column;
-    min-height: 75dvh;
+
+    max-height: 100dvh;
     justify-content: center;
     align-items: center;
     outline: var(--outline-size) dashed green;
-    gap: 2%;
 }
 
 
 main .text {
-    display: flex;
-    flex-direction: column;
     font-weight: bold;
     font-size: calc(1.1dvw + 1.1dvh + 1.1vmin);
-    outline:none;
-    overflow:hidden;
-    font-size-adjust: 0.75;
+    outline: none;
+    overflow: hidden;
+    font-size-adjust: 0.5;
     color: darkblue;
     text-align: center;
     align-items: center;
@@ -96,26 +92,25 @@ button {
     outline: var(--outline-size) dashed red;
 }
 
- #playVideo.hide {
-  display: none;
+#playVideo.hide {
+    display: none;
 }
 
 #playVideo {
-  display: block;
+    display: block;
 }
 
-.container footer {
+footer {
     display: flex;
     flex-direction: column;
-    grid-area: footer;
-    min-height: 7dvh;
+    max-height: 10dvh;
     background: PapayaWhip;
     text-align: center;
     justify-content: center;
     align-items: center;
     font-size: calc(1.1dvw + 1.1dvh + 1.1vmin);
-    outline:none;
-    overflow:hidden;
+    outline: none;
+    overflow: hidden;
     font-size-adjust: 0.3;
     outline: var(--outline-size) dashed blue;
 }
